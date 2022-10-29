@@ -29,28 +29,23 @@
           <i class="fa fa-bars" onclick="showMenu()"></i>
 
        </nav>
-       <div>
-        {% for row in rows %}
-            <hr>
-            <div>
-                {% for i in range(row|length) %}
-                    <p>{{keys[i]}} : {{row[i]}}</p>
-                {% endfor %}
-            </div>
-        {% endfor %}
-       </div>
-    </section>
-
+  <div class="text-box">
+    <a class="btn btn-secondary" href='/interior-view'> To see Interior </a>
+    <br>
+    <a class="btn btn-secondary" href='/exterior-view'> To see Exterior </a>
   
-  </body>
-  <!---JavaScript for Toggle Menu-->
-  <script>
-    var navLinks= document.getElementsById("navLinks");
-    function showMenu(){
-      navLinks.style.right="0";
-    }
-    function hideMenu(){
-      navLinks.style.right="-200px";
-    }
- </script>
+  </div>
+   </section>
+<!--- Design ---->
+</body>
+<!---JavaScript for Toggle Menu---->
+    <script>
+        var navLinks= document.getElementsById("navLinks");
+        function showMenu(){
+          navLinks.style.right="0";
+        }
+        function hideMenu(){
+          navLinks.style.right="-200px";
+        }
+    </script>
 </html>

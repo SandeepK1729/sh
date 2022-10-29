@@ -1,8 +1,8 @@
 interior = {
-    'keys' : ["FULL", "AGE" , "GENDER" , "EMail" , "PHONE" , "ALT_PHONE" , "ADDRESS","PRIOR_EXPERIENCE"]
+    'keys' : ["FULL NAME", "AGE" , "GENDER" , "E-Mail" , "PHONE NO" , "ALTERNATE PHONE NO" , "ADDRESS","PRIOR EXPERIENCE"]
 }
 exterior = {
-    'keys' : []
+    'keys' : ["FULL NAME", "AGE" , "GENDER" , "E-Mail" , "PHONE NO" , "ALTERNATE PHONE NO" , "ADDRESS","PRIOR EXPERIENCE"]
 }
 
 tables = {

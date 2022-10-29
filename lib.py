@@ -1,6 +1,5 @@
 from sqlite3 import connect
 from data import tables
-import pandas as pd 
 
 def select(table_name):
     keys = tables[table_name]
@@ -18,7 +17,7 @@ def insert(table_name, dict):
     with connect('database.db') as con: 
         cur = con.cursor()
         cmd = f"INSERT INTO {table_name} VALUES('" + "','".join(values) + "');"
-        print(cmd   )
+        print(cmd)
         cur.execute(cmd)
         con.commit()
     
@@ -28,3 +27,10 @@ def delete(table_name):
         cmd = f"DELETE FROM {table_name};"
         cur.execute(cmd)
         
+def run_query(cmd):
+    with connect('database.db') as con:
+        cur = con.cursor()
+        cur.execute(cmd)
+        con.commit()
+        return cur.fetchall()
+    
